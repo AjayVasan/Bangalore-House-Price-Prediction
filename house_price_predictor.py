@@ -122,6 +122,8 @@ print(dg.head())
 corr = np.corrcoef(dg.values.T)
 hm = sb.heatmap(corr , annot=True)
 plt.show()
+sb.pairplot(dg)
+plt.show()
 
 
 tr = dataset["price"]
@@ -207,23 +209,6 @@ gr_test=P4.predict(xtest)
 print("#"*15,"Training","#"*15,"\t"*3,"     ","#"*15,"Testing","#"*15)
 # # print("    MSE      : ",mean_squared_error(ytrain,gr_train),"\t"*5,"  MSE      : ",mean_squared_error(ytest,gr_test))
 print("    R2_score : ",r2_score(ytrain,gr_train),"\t"*5,"  R2_score : ",r2_score(ytest,gr_test))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
