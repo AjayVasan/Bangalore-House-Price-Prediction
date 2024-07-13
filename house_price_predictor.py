@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestRegressor ,GradientBoostingRegressor
 from sklearn.tree import DecisionTreeRegressor
 
 
-dataset = pd.read_csv("Fun Ml projekt\Bangalore  house data.csv")
+dataset = pd.read_csv("Bangalore  house data.csv")
 print(dataset.head())
 print(dataset.describe())
 print(dataset.info())
